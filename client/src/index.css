@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#t1 {
+  font-family: "Marcellus", serif;
+  font-style: normal;
+  font-weight: 600;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 60px 90px;
+}
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 40px;
+  margin-bottom: 40px;
+}
+.footer-column h3 {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  position: relative;
+}
+.footer-column h3::after {
+  content: '';
+  display: block;
+  width: 30px;
+  height: 2px;
+  background-color: #fce4e4;
+  margin-top: 8px;
+}
+.footer-links { list-style: none; }
+.footer-links li { margin-bottom: 10px; }
+.footer-links a { color: #ccc; transition: color 0.3s; }
+.footer-links a:hover { color: white; }
+.social-links { display: flex; gap: 15px; margin-top: 20px; }
+.social-icon {
+  width: 40px;
+  height: 40px;
+  background-color: #444;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s;
+}
+.social-icon:hover { background-color: #fce4e4; color: #333; }
+.footer-bottom {
+  text-align: center;
+  padding-top: 30px;
+  border-top: 1px solid #444;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+.section-title::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #f43f5e;
+  margin-top: 8px;
+}
+.hero-gradient {
+  background: linear-gradient(to right, rgba(254, 226, 226, 0.9), rgba(252, 231, 243, 0.6));
+}
+.product-card { transition: all 0.3s ease; }
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+.product-image-wrapper {
+  overflow: hidden;
+  position: relative;
+  aspect-ratio: 1/1;
+  background-color: #f9fafb;
+}
+.product-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 12px;
+  transition: transform 0.5s ease;
+}
+.product-card:hover .product-image { transform: scale(1.05); }
+.arrow-btn { top: 40%; transform: translateY(-50%); }
