@@ -1,6 +1,6 @@
 # VEYRA E-Commerce
 
-Full-stack e-commerce application built with **React (Vite)**, **Node.js (Express)**, and **MongoDB**. This project is a migration from a PHP + MySQL codebase; the frontend UI is kept pixel-identical (same Tailwind classes and DOM structure).
+Full-stack e-commerce application built with **React (Vite)**, **Node.js (Express)**, and **MongoDB**. 
 
 ## Architecture
 
